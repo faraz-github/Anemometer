@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/styles/styles.css">
+
+    <title>Anemometer</title>
+</head>
+
+<body>
+
+    <div class="container text-center p-4">
+        <div class="anemo-meter p-3">
+            <div class="anemo-fan m-auto mt-4">
+            </div>
+            <div class="anemo-content m-auto mt-4">
+                <form action="/" method="post">
+                    <div class="anemo-display p-1">
+                        <input type="text" name="cityName" class="input-city border text-warning"
+                            placeholder="Enter Location" required>
+                        <p class="text-light">Enter the name of city to get the live weather conditions.</p>
+                        <button class="btn btn-outline-warning" type="submit">Go!</button>
+                    </div>
+                </form>
+                <p class="text-warning m-2 title">Anemometer</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="mt-5 text-center text-dark">
+        Copyright &#169; Faraz
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+<!-- <form action="/" method="post">
+    <div class="card m m-auto mt-4 shadow p-2" style="width: 18rem;">
+        <img src="https://image.flaticon.com/icons/png/512/1163/1163661.png" class="card-img-top">
+        <div class="card-body">
+            <input type="text" name="cityName" class="form-control" placeholder="Enter City" required>
+            <p class="card-text">Enter the name of city to get the live weather conditions.</p>
+            <button class="btn btn-outline-dark w-100" type="submit">Go!</button>
+        </div>
+    </div>
+</form> -->

@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap');
+
+.anemo-meter{
+    height: 600px;
+    background-image: url("/images/Asset 1.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.anemo-fan{
+    height: 235px;
+    width: 235px;
+    background-image: url("/images/Asset 2.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: rotation 2s infinite linear;
+}
+
+.anemo-content{
+    height: 250px;
+    width: 180px;
+    padding: 5px 0 0 15px;
+}
+.anemo-display{
+    height: 240px;
+    width: 160px;
+    background-color: #47685D;
+    font-family: 'Chakra Petch', sans-serif;
+    border: 2px inset grey;
+    text-align: left;
+}
+
+.title{
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+/* POST SPECIFIC  */
+
+.input-city{
+    width: 100%;
+    background-color: transparent;
+}
+.input-city:focus{
+    outline: none;
+}
+
+/* GET SPECIFIC */
+.icon{
+    height: 50px;
+    width: 50px;
+}
+
+.temp
+{
+    display: inline;
+    float: right;
+}
+
+.windIcon{
+    display: inline;
+}
+
+.wind{
+    display: inline;
+    float: right;
+}
+
+footer{
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
