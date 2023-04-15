@@ -1,8 +1,9 @@
 require("dotenv").config();
-
+const path = require("path");
 const express = require("express");
 const app = express();
 const https = require("https");
+const cors = require("cors");
 
 //Static Folder
 app.use(express.static(__dirname + "/public"));
@@ -11,7 +12,11 @@ app.use(express.static(__dirname + "/public"));
 app.use(express.urlencoded({ extended: true }));
 
 //EJS-View Engine
+app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
+
+// Cross Origin Resource Sharing-CORS
+app.use(cors());
 
 ////////////////////////////////////////////////////////////////// ROUTES
 
@@ -60,3 +65,6 @@ if (port == null || port == "") {
 app.listen(port, function () {
     console.log("Server has started successfully.");
 });
+
+////////////////////////////////////////////////////////////////// Export Express App
+module.exports = app;
