@@ -1,24 +1,49 @@
-# Anemometer
-
+# anemometer
 A digital anemometer like app made using Nodejs environment using openweathermapAPI.
 
-## Available Commands
+## Tech Stack
 
-- npm install
-- node app.js
+**Client:** Bootstrap
 
-## Installation
+**Server:** Node, Express
 
-Anemometer requires [Node.js](https://nodejs.org/) to run.
+**Template Engine:** EJS
 
-Install the dependencies and start the server.
-
-```sh
-cd Anemometer
-npm i
-node app.js
+## Run Locally
+Clone the project
+```bash
+  git clone https://github.com/faraz-github/Anemometer.git
+```
+Go to the project directory
+```bash
+  cd Anemometer
+```
+Install dependencies
+```bash
+  npm install --save
 ```
 
-## Demo
+Add `.env` file in the `root` with required environment variables.
+Start the server
+```bash
+  node index.js
+```
 
-[Anemometer](https://aqueous-inlet-81921.herokuapp.com/)
+## Environment Variables
+To run this project, you will need to add the following environment variables to your .env file
+
+`API_KEY` 
+
+## Design References
+
+**Typography**
+
+[Chakra Petch](https://fonts.google.com/specimen/Chakra+Petch?query=Chakra) by Google Fonts
+
+**Colors**
+|  Name|  Hex | Color |
+|---|---|---|
+| Stormcloud |#47685D | ![#47685D](https://via.placeholder.com/20/47685D?text=+) |
+
+## Demo
+[anemometer](https://anemometer.vercel.app/)
